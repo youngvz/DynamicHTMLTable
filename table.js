@@ -7,13 +7,9 @@ function addRow(){
     var columnCount = table.rows[0].cells.length;
     var row = table.insertRow(rowCount);
 
-    if (columnCount > 0){
-        for(var index=0; index < columnCount; ++index){
+    for(var index=0; index < columnCount; ++index){
             var cellText = index + ", " + rowCount;
             row.insertCell(index).innerHTML = cellText;
-        }
-    }else{
-        alert("Enter a column first");
     }
 }
 
