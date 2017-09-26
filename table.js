@@ -1,11 +1,8 @@
 'use strict'
 
-const tableName = "Table";
-const header = "TableHeader";
-
 function addRow(){
     
-    var table = document.getElementById(table);
+    var table = document.getElementById('Table');
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     var row = table.insertRow(rowCount);
@@ -17,12 +14,12 @@ function addRow(){
         }
     }else{
         alert("Enter a column first");
-        return
     }
 }
 
 function deleteLastRow(){
-    var table = document.getElementById(table);
+    
+    var table = document.getElementById('Table');
     var rowCount = table.rows.length - 1;
     
     if (rowCount > 0){
@@ -34,7 +31,7 @@ function deleteLastRow(){
 
 function addColumn(){
         
-    var table = document.getElementById(table);
+    var table = document.getElementById('Table');
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     
@@ -45,8 +42,8 @@ function addColumn(){
 }
 
 function deleteLastColumn(){
+    var table = document.getElementById('Table');
     
-    var table = document.getElementById(table);
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     var lastColumnIndex = columnCount - 1;
