@@ -1,32 +1,28 @@
 'use strict'
 
+const tableName = "Table";
+const header = "TableHeader";
 
 function addRow(){
-    var table = document.getElementById("Table");
-
+    
+    var table = document.getElementById(table);
     var rowCount = table.rows.length;
-    var row = table.insertRow(rowCount);
-    
     var columnCount = table.rows[0].cells.length;
-    console.log(columnCount);
-    
+    var row = table.insertRow(rowCount);
+
     if (columnCount > 0){
-                
         for(var index=0; index < columnCount; ++index){
-            
             var cellText = index + ", " + rowCount;
-            
             row.insertCell(index).innerHTML = cellText;
         }
-        
     }else{
         alert("Enter a column first");
+        return
     }
 }
 
 function deleteLastRow(){
-    var table = document.getElementById("Table");
-
+    var table = document.getElementById(table);
     var rowCount = table.rows.length - 1;
     
     if (rowCount > 0){
@@ -38,22 +34,19 @@ function deleteLastRow(){
 
 function addColumn(){
         
-    var table = document.getElementById('Table');
-    
+    var table = document.getElementById(table);
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     
     for(var index=0; index < rowCount; ++index){
         var row = table.rows[index];
-        
-        var cellText = columnCount + ", " + index;
-        row.innerHTML += "<td>" + cellText + "</td>"; 
+        row.innerHTML += "<td>" + columnCount + ", " + index + "</td>"; 
     }
 }
 
 function deleteLastColumn(){
-    var table = document.getElementById('Table');
     
+    var table = document.getElementById(table);
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     var lastColumnIndex = columnCount - 1;
