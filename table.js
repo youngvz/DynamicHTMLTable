@@ -38,8 +38,8 @@ function addColumn(){
 }
 
 function deleteLastColumn(){
-    var table = document.getElementById('Table');
     
+    var table = document.getElementById('Table');
     var rowCount = table.rows.length;
     var columnCount = table.rows[0].cells.length;
     var lastColumnIndex = columnCount - 1;
