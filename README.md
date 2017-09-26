@@ -8,7 +8,7 @@ Chad H. Frederick
 
 Assignment 6 (Dynamic Table Using DHTML)
 
-https://grid.cs.gsu.edu/~cfrederick/csc4370/
+http://codd.cs.gsu.edu/~vshah15/Assigments/Homework6
 
 Create an HTML page that has a table
 
