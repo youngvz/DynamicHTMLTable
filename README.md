@@ -1,9 +1,13 @@
 # DynamicHTMLTable
 
 Georgia State University
+
 CSc 4370
+
 Chad H. Frederick
+
 Assignment 6 (Dynamic Table Using DHTML)
+
 https://grid.cs.gsu.edu/~cfrederick/csc4370/
 
 Create an HTML page that has a table
