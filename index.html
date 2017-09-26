@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Dynamic Table</title>
+    <script type="text/javascript" src="table.js"></script>
+</head>
+<body>
+    <div>
+        <b>Use these buttons wisely.</b>
+        <br>
+        <br>
+        <form>
+            <input type="button" value="Add Row" onclick="addRow()">
+            <input type="button" value="Remove Row" onclick="deleteLastRow()">
+            <input type="button" value="Add Column" onclick="addColumn()">
+            <input type="button" value="Remove Column" onclick="deleteLastColumn()">
+        </form>
+    </div>
+    
+    <br>
+    <div>
+        
+    <div>
+        <b>Dynamic Table</b>
+        &nbsp;<br/>
+        <br>
+        <table id="Table"  border="1" cellpadding="2">
+            <tr id="TableHeader">
+                <td>0, 0</td>
+                <td>1, 0</td>
+            </tr>
+            <tr>
+                <td>0, 1</td>
+                <td>1, 1</td>
+            </tr>
+        </table>
+        &nbsp;<br/>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
